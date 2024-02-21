@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.headercontainer{
+    display: flex;
+    text-align: center;
+    /* justify-content: center; */
+    position: static;
+    top: 0;
+
+}
+.headercontainer .logo img{
+    height: 12vh;
+    padding: 20px 80px;
+}
+.headercontainer .navbar{
+    height: 17vh;
+    
+}
+.headercontainer .navbar a{
+    color: black;
+}
+.headercontainer .navbar ul{
+    line-height: 12vh;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 900px;
+
+}
+.headercontainer .navbar ul li{
+    list-style: none;
+}
+
+.headercontainer .navbar ul li a:hover{
+    color: #999770;
+    transition: .2s ease;
+    -webkit-transition: .3s;
+
+}
+
+
+/* Banner 1 */
+
+#banner1 {
+    text-align: center;
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subheading h5{
+    font-weight: 300;
+    font-size: .9rem;
+    padding: 2px 0;
+}
+
+.heading h1{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 3px 320px;
+    
+}
+
+.description p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 8px 190px;
+}
+
+/* Banner 2 */
+#banner2{
+    padding-top: 50px;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+#banner2 h3{
+    text-align: center;
+    color: #3e3e3e;
+}
+
+.servicewrap{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* padding: 20px; */
+    margin: 20px 0;
+}
+.servicewrap .box1,
+.servicewrap .box2,
+.servicewrap .box3{
+    padding: 20px 0;
+    margin: 0px 30px;
+    border: 1px solid black;
+    border-radius: 18px;
+}
+
+.servicewrap h6{
+    font-size: 1rem;
+    padding: 20px 30px;
+}
+.servicewrap p{
+    font-size: 1rem;
+    padding: 0 30px;
+}
+
+/* Previous Work */
+#prevwork {
+    margin: 40px 0;
+    text-align: center;
+    background: #bdbdbd;
+    /* height: 8vh; */
+
+}
+#prevwork a{
+    color: black;
+    transition: .2s ease;
+}
+#prevwork a:hover{
+    color: #3e3e3e;
+    text-decoration-line: underline;
+    transition: .3s ease;
+}
+
+/* Footer */
+#footer{
+    margin: 20px 0;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footabout h4{
+    font-size: 1.2rem;
+
+}
+.footabout h6{
+    font-weight: 400;
+    font-size: .878rem;
+}
+.footabout a{
+    color: black;
+}
+.footabout a:hover{
+    text-decoration-line: underline;
+}
+.footcontact P{
+    padding: 4px 0px;
+    padding-right: 80px;
+}
