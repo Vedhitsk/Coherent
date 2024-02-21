@@ -65,14 +65,14 @@
 .heading h1{
     font-size: 3rem;
     font-weight: 700;
-    padding: 3px 320px;
+    padding: 3px 420px;
     
 }
 
 .description p{
     font-weight: 400;
     font-size: 1.2rem;
-    padding: 8px 190px;
+    padding: 8px 230px;
 }
 
 /* Banner 2 */
@@ -155,4 +155,159 @@
 .footcontact P{
     padding: 4px 0px;
     padding-right: 80px;
+}
+
+
+/* About us Page */
+#about{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+#about h1{
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+
+/* about Banner 1 */
+#aboutbanner1{
+    padding: 12px;
+    margin: 12px;
+    margin-top: 50px;
+}
+#aboutbanner1 .vision{
+    padding-top: 30px;
+    padding: 0 30px;
+    color: #3e3e3e;
+    font-weight: bold;
+}
+
+#aboutbanner1 .abtbannerwrap{
+    display: flex;
+
+}
+#aboutbanner1 .abtbannerwrap .abtbannerleft{
+    width: 70%;
+    padding: 0 30px;
+}
+#aboutbanner1 .abtbannerwrap .abtbannerleft .future h3{
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+#aboutbanner1 .abtbannerwrap .abtbannerleft .pointswrap{
+    display: flex;
+    padding: 20px 10px;
+}
+#aboutbanner1 .abtbannerwrap .abtbannerleft .pointswrap .pointlogos {
+    padding: 0 20px;
+    background-color: #d8ae5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 57px;
+    height: 57px;
+}
+#aboutbanner1 .abtbannerwrap .abtbannerleft .pointswrap .pointlogos i{
+    color: #fff;
+}
+#aboutbanner1 .abtbannerwrap .abtbannerleft .pointswrap .pointdescription{
+    padding: 0 20px;
+}
+#aboutbanner1 .abtbannerwrap .abtbannerleft .pointswrap .pointdescription h5{
+    font-size: 1rem;
+    padding-bottom: 8px;
+}
+#aboutbanner1 .abtbannerwrap .abtbannerleft .pointswrap .pointdescription p{
+    font-size: .9rem;
+    color: #333333;
+}
+#aboutbanner1 .abtbannerwrap .abtbannerright .imgwrap{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-image: url("dots_1HevSx5z-qjqt13r149z4ec1xk50f8rgicgw4azanssbtmxba2g.webp");
+    background-position: center;
+    background-size: cover no-repeat; */
+    height: 100%;
+}
+#aboutbanner1 .abtbannerwrap .abtbannerright .imgwrap .twoimg{
+    display: flex;
+}
+
+/* About banner 2 */
+#aboutbanner2{
+    display: flex;
+    
+}
+#aboutbanner2 .abtbanner2left{
+    width: 140%;
+    padding: 60px
+}
+#aboutbanner2 .abtbanner2right{
+    padding: 60px 0px;
+    padding-right: 30px;
+}
+#aboutbanner2 .abtbanner2right span{
+    color: #3e3e3e;
+    font-weight: bold;
+    /* padding: 30px; */
+}
+#aboutbanner2 .abtbanner2right h4{
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding-top: 12px;
+
+}
+#aboutbanner2 .abtbanner2right p{
+    font-size: .9rem;
+    padding-top: 12px;
+    font-weight: light;
+    color: #333333;
+}
+
+/* About Banner 3 */
+#aboutbanner3{
+    display: flex;
+}
+#aboutbanner3 .abtbanner3right{
+    width: 150%;
+    padding: 60px;
+}
+
+
+#aboutbanner3 .abtbanner3left {
+    padding: 60px;
+}
+#aboutbanner3 .abtbanner3left .ourskills span{
+    color: #3e3e3e;
+    font-weight: bold;
+}
+
+#aboutbanner3 .abtbanner3left .banner3heading{
+    padding: 12px 0;
+}
+#aboutbanner3 .abtbanner3left .banner3heading h1{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+#aboutbanner3 .abtbanner3left .banner3heading p{
+    color: #333333;
+    padding: 12px 0;
+    padding-bottom: 20px;
+    font-size: .9rem;
+    font-weight: light;
+}
+#aboutbanner3 .abtbanner3left .banner3heading .skills .banner3skill{
+    padding-bottom: 20px;
+}
+#aboutbanner3 .abtbanner3left .banner3heading .skills .banner3skill hr{
+    padding-top: 5px;
+    border-radius: 30px;
+    /* color: #ffffff; */
+    background-color: #001f35;
+}
+#aboutbanner3 .abtbanner3left .banner3heading .skills .banner3skill span{
+    font-size: medium;
+    font-weight: 300;
+    color: #5e5e5e;
 }
