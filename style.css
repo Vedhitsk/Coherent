@@ -311,3 +311,62 @@
     font-weight: 300;
     color: #5e5e5e;
 }
+
+
+/* Contact page */
+#cnctbanner1{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+#cnctbanner1 .cnctbanner1heading h1{
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+
+#cnctbanner2{
+    display: flex;
+    padding: 60px;
+}
+#cnctbanner2 .cnctbanner2left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#cnctbanner2 .cnctbanner2left h4{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#cnctbanner2 .cnctbanner2left p{
+    color: #333333;
+    font-size: .9rem;
+}
+
+#cnctbanner2 .cnctbanner2right{
+    padding: 0 30px;
+}
+#cnctbanner2 .cnctbanner2right .forminput{
+    padding: 4px 0;
+    
+}
+#cnctbanner2 .cnctbanner2right .forminput input,
+#cnctbanner2 .cnctbanner2right .forminput textarea{
+    padding: 6px 12px;
+    
+}
+#cnctbanner2 .cnctbanner2right .formsubmit{
+    text-align: center;
+}
+#cnctbanner2 .cnctbanner2right .formsubmit button{
+    padding: 8px 210px;
+    font-weight: bolder;
+    font-size: .999rem;
+    background-color: #d8ae5f;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+}
