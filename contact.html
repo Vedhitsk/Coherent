@@ -6,10 +6,69 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
     <title>Coherent</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+        /* Custom styles */
+        .navbar-brand {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-right: 12rem;
+        }
+        .navbar-nav {
+          justify-content: center;
+        }
+        .navbar-nav .nav-link {
+          padding: 0.5rem 1rem;
+        }
+        /* .nav-item{
+            padding-right: 9rem;
+        } */
+        .navbar-light .navbar-nav .nav-link .active{
+          font-weight: 500;
+          /* font-size: 1.1rem; */
+          /* color: rgb(255, 170, 59); */
+        }
+        
+        .navbar-logo {
+          margin-left: auto;
+        }
+        .navbar-logo img{
+          width: 100px;
+          
+        }
+        .logo-wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 768px) {
+          .navbar-brand {
+            margin-right: auto;
+          }
+          .navbar-logo {
+            margin-left: 0;
+          }
+          .navbar-nav .nav-link{
+              padding-left: 1rem;
+          }
+          /* .nav-item{
+            text-align: center;
+          } */
+          .navbar-logo img{
+            width: 120px;
+            margin: 2% 35%;
+          }
+  
+        }
+      </style>
 </head>
 
 <body>
-    <section>
+    <!-- <section>
         <div class="headercontainer">
             <div class="logo">
                 <a href="index.html"><img src="1cdc.jpg" alt=""></a>
@@ -26,8 +85,58 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section> -->
     
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="logo-wrap">
+            <a class="navbar-brand" href="index.html">Coherent Designers</a>
+            <a class="navbar-brand" href="index.html">& Consultants</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a style="padding-right: 9rem;" class="nav-link " href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a style="padding-right: 9rem;" class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a style="" class="nav-link  active" href="contact.html">Contact</a>
+            </li>
+          </ul> -->
+          <div class="nav-item-wrap">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a style="padding-right: 5rem;" class="nav-link" href="service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a style="padding-right: 5rem;" class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a style="" class="nav-link active" href="contact.html">Contact</a>
+              </li>
+            </ul>
+        </div>
+          <div class="navbar-logo">
+            <a href="index.html"><img src="1cdc.jpg" alt="Company Logo" width="50" /></a>
+            
+          </div>
+        </div>
+      </nav>
+
 
     <!-- Contact Banner 1 -->
     <section id="cnctbanner1">
@@ -53,7 +162,7 @@
                     <input type="email" id="Email" name="Email" size="61" placeholder="Email*" class="" required>
                 </div>
                 <div class="forminput">
-                    <textarea id="Message" name="Message" placeholder="Message*" class="fcf-form-control" rows="5" cols="64" maxlength="3000" required></textarea>
+                    <textarea id="Message" name="Message" placeholder="Message*" class="fcf-form-control" rows="5" cols="67" maxlength="3000" required></textarea>
                 </div>
                 <div class="forminput formsubmit">
                     <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">SEND</button>
@@ -63,12 +172,12 @@
     </section>
 
 
-    <!-- Footer -->
+    <!-- Footer -->    
     <section id="footer">
         <div class="footheading">
-            <h2>COHERENT</h2>
-            <h2> DESIGNERS</h2>
-            <h2> & CONSULTANTS</h2>
+            <h2 style="font-weight: bold;">COHERENT</h2>
+            <h2 style="font-weight: bold;"> DESIGNERS</h2>
+            <h2 style="font-weight: bold;"> & CONSULTANTS</h2>
         </div>
 
         <div class="footabout">
@@ -85,5 +194,11 @@
             
         </div>
     </section>
+
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

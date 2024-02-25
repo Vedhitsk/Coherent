@@ -13,11 +13,70 @@
       referrerpolicy="no-referrer"
     />
     <title>Coherent</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom styles */
+      .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-right: 12rem;
+      }
+      .navbar-nav {
+        justify-content: center;
+      }
+      .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+      }
+      /* .nav-item{
+          padding-right: 9rem;
+      } */
+      .navbar-light .navbar-nav .nav-link .active{
+        font-weight: 500;
+        /* font-size: 1.1rem; */
+        /* color: rgb(255, 170, 59); */
+      }
+      
+      .navbar-logo {
+        margin-left: auto;
+      }
+      .navbar-logo img{
+        width: 100px;
+        
+      }
+      .logo-wrap{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+      @media (max-width: 768px) {
+        .navbar-brand {
+          margin-right: auto;
+        }
+        .navbar-logo {
+          margin-left: 0;
+        }
+        .navbar-nav .nav-link{
+            padding-left: 1rem;
+        }
+        /* .nav-item{
+          text-align: center;
+        } */
+        .navbar-logo img{
+          width: 120px;
+          margin: 2% 35%;
+        }
+
+      }
+    </style>
   </head>
 
   <body>
-    <!-- Navigation Bar -->
-    <section>
+    
+    <!-- <section>
       <div class="headercontainer">
         <div class="logo">
           <a href="index.html"><img src="1cdc.jpg" alt="" /></a>
@@ -36,7 +95,57 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="logo-wrap">
+        <a class="navbar-brand" href="index.html">Coherent Designers</a>
+        <a class="navbar-brand" href="index.html">& Consultants</a>
+    </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a style="padding-right: 9rem;" class="nav-link" href="service.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a style="padding-right: 9rem;" class="nav-link active" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a style="" class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul> -->
+        <div class="nav-item-wrap">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a style="padding-right: 5rem;" class="nav-link" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a style="padding-right: 5rem;" class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a style="" class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+      </div>
+        <div class="navbar-logo">
+          <a href="index.html"><img src="1cdc.jpg" alt="Company Logo" width="50" /></a>
+          
+        </div>
+      </div>
+    </nav>
 
     <!-- About Banner -->
     <section id="about">
@@ -100,29 +209,24 @@
 
         <div class="abtbannerright">
           <div class="imgwrap">
-            <img
-              style="
-                width: 70%;
-                height: 40vh;
-                border-radius: 20px;
-                position: relative;
-                left: 95px;
-                bottom: 30px;
-                z-index: 99;
-              "
-              src="creative-business-people-working-on-business-proje-58FUABR_1HevSx5z-qjqt14p1edykryt8h7qwdnfs4jtmtggzjvx5v7o01s.webp"
-              alt=""
-            />
+            <div class="mobileneed">
+              <img
+                
+                src="creative-business-people-working-on-business-proje-58FUABR_1HevSx5z-qjqt14p1edykryt8h7qwdnfs4jtmtggzjvx5v7o01s.webp"
+                alt=""
+              />
+
+            </div>
             <div class="twoimg">
               <img
                 style="
-                  width: 100%;
+                  width: 75%;
                   height: 50vh;
                   border-radius: 20px;
                   display: inline;
                   position: relative;
                   left: 23px;
-                  bottom: 160px;
+                  bottom: 90px;
                   z-index: 999;
                 "
                 src="office-lifestyle-business-and-people-concept-attra-4MLRBMH_1HevSx5z.webp"
@@ -134,8 +238,9 @@
                   width: 100%;
                   height: 30vh;
                   position: relative;
-                  left: 20px;
-                  bottom: 90px;
+                  left: 35px;
+                  bottom: 0px;
+                  z-index: -1;
                 "
                 src="dots_1HevSx5z-qjqt13r149z4ec1xk50f8rgicgw4azanssbtmxba2g.webp"
                 alt=""
@@ -210,9 +315,9 @@
     <!-- Footer -->
     <section id="footer">
       <div class="footheading">
-        <h2>COHERENT</h2>
-        <h2>DESIGNERS</h2>
-        <h2>& CONSULTANTS</h2>
+        <h2 style="font-weight: bold;">COHERENT</h2>
+        <h2 style="font-weight: bold;">DESIGNERS</h2>
+        <h2 style="font-weight: bold;">& CONSULTANTS</h2>
       </div>
 
       <div class="footabout">
@@ -228,5 +333,10 @@
         <p>+91-8813866199</p>
       </div>
     </section>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
