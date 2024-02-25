@@ -120,7 +120,8 @@ nav{
 }
 
 #banner2 p {
-    padding: 0 90px
+    padding: 0 6%;
+    text-align: justify;
 }
 
 .servicewrap {
