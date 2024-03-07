@@ -7,16 +7,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: normal;
     justify-content: center;
 }
 
-.margin{
+/* .margin{
     margin: 0 30px;
-}
+} */
 
 /* navbar */
 /* .headercontainer{
@@ -58,7 +58,7 @@ body{
 } */
 
 /* Navigation bar */
-nav{
+nav {
     opacity: 0;
     overflow: hidden;
     transform: translateY(10px);
@@ -82,7 +82,7 @@ nav{
 #banner1 div,
 #banner1 h5,
 #banner1 h1,
-#banner1 p{
+#banner1 p {
     opacity: 0;
     /* overflow: hidden; */
     transform: translateY(10px);
@@ -115,10 +115,11 @@ nav{
     padding: 20px 0;
     margin-top: 20px;
 }
+
 #banner2 h3,
 #banner2 div,
 #banner2 img,
-#banner2 p{
+#banner2 p {
     opacity: 0;
     /* overflow: hidden; */
     transform: translateY(10px);
@@ -132,9 +133,15 @@ nav{
     font-weight: 700;
 }
 
-#banner2 p {
-    padding: 0 6%;
+#banner2 .desc p {
+    padding: 0 20%;
+    padding-bottom: 12px;
     text-align: justify;
+}
+
+.servicewrap .servicebox p {
+    padding: 0 10%;
+    text-align: left;
 }
 
 .servicewrap {
@@ -150,9 +157,21 @@ nav{
 .servicewrap .box3 {
     padding: 20px 0;
     margin: 0px 30px;
-    border: 1px solid black;
+    /* border: 2px solid #c2c2c2; */
     border-radius: 18px;
     width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
+    background-color: #ffffff;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.servicewrap .box1:hover,
+.servicewrap .box2:hover,
+.servicewrap .box3:hover {
+    /* border: 2px solid #9a9999; */
+    box-shadow: 0 0px 15px rgba(0, 0, 0, .3);
+
 }
 
 .servicewrap h6 {
@@ -171,24 +190,33 @@ nav{
 #prevwork {
     margin: 30px 43%;
     text-align: center;
-    background: #bdbdbd;
+    background: #e0e0e0;
     /* height: 8vh; */
     border-radius: 5px;
+    /* box-shadow: 0px 15px 15px rgba(0, 0, 0, .2); */
+    transition: .3s ease;
+}
 
+#prevwork:hover {
+    background: #b9b9b9;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .4);
 }
 
 #prevwork a {
-    color: black;
+    color: rgb(44, 44, 44);
     transition: .2s ease;
     font-size: 1.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 5vh;
+    text-decoration: none;
+
 
 }
+
 #prevwork,
-#prevwork a{
+#prevwork a {
     opacity: 0;
     /* overflow: hidden; */
     transform: translateY(10px);
@@ -196,8 +224,8 @@ nav{
 }
 
 #prevwork a:hover {
-    text-decoration-line: underline;
-    color: #3e3e3e;
+    /* text-decoration-line: underline; */
+    color: #000000;
     transition: .3s ease;
 }
 
@@ -208,12 +236,17 @@ nav{
     display: flex;
     align-items: baseline;
     justify-content: space-around;
+    background-color: #313131;
+    margin-bottom: 0;
+    color: #efefef;
+    padding-top: 50px;
 }
+
 #footer h2,
 #footer .footabout,
 #footer h4,
 #footer h6,
-#footer .footcontact{
+#footer .footcontact {
     opacity: 0;
     overflow: hidden;
     transform: translateY(10px);
@@ -232,12 +265,12 @@ nav{
 }
 
 .footabout a {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .footabout a:hover {
     text-decoration-line: underline;
-    color: #3e3e3e;
+    color: #ffffff;
 }
 
 .footcontact P {
@@ -245,16 +278,33 @@ nav{
     padding-right: 80px;
 }
 
+/* Service Page */
+.servicebanner {
+    background-image: url(service-banner.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 /* About us Page */
 #about {
-    margin-top: 15rem;
+    margin-top: 6.7rem;
     width: 100%;
-    height: 150px;
+    height: 250px;
     text-align: center;
     line-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(about-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #c5c5c5;
 }
-#about h1{
+
+#about h1 {
     opacity: 0;
     overflow: hidden;
     transform: translateY(10px);
@@ -272,11 +322,12 @@ nav{
     margin: 12px;
     margin-top: 50px;
 }
+
 #aboutbanner1 span,
 #aboutbanner1 div,
 #aboutbanner1 p,
 #aboutbanner1 i,
-#aboutbanner1 img{
+#aboutbanner1 img {
     opacity: 0;
     /* overflow: hidden; */
     transform: translateY(10px);
@@ -351,12 +402,14 @@ nav{
     display: flex;
     z-index: 999;
 }
-.mobileneed{
+
+.mobileneed {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
+
 .mobileneed img {
     width: 70%;
     height: 50vh;
@@ -373,8 +426,9 @@ nav{
     display: flex;
 
 }
+
 #aboutbanner2 div,
-#aboutbanner2 img{
+#aboutbanner2 img {
     opacity: 0;
     overflow: hidden;
     transform: translateY(10px);
@@ -415,11 +469,12 @@ nav{
 #aboutbanner3 {
     display: flex;
 }
+
 #aboutbanner3 div,
 #aboutbanner3 span,
-#aboutbanner3 h1, 
+#aboutbanner3 h1,
 #aboutbanner3 p,
-#aboutbanner3 img{
+#aboutbanner3 img {
     opacity: 0;
     overflow: hidden;
     transform: translateY(10px);
@@ -481,13 +536,27 @@ nav{
 
 /* Contact page */
 #cnctbanner1 {
-    margin-top: 15rem;
+    margin-top: 6.7rem;
     width: 100%;
-    height: 150px;
+    height: 250px;
     text-align: center;
+    display: flex;
     line-height: 200px;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: #000; */
+    color: #e1e1e1;
 }
-#cnctbanner1 h1{
+
+.contactbanner {
+    background-image: url(contact-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#cnctbanner1 h1 {
     opacity: 0;
     overflow: hidden;
     transform: translateY(10px);
@@ -508,7 +577,7 @@ nav{
 #cnctbanner2 input,
 #cnctbanner2 textarea,
 #cnctbanner2 button,
-#cnctbanner2 div{
+#cnctbanner2 div {
     opacity: 0;
     overflow: hidden;
     transform: translateY(10px);
@@ -590,14 +659,18 @@ nav{
         height: 430px;
         flex-direction: column;
         justify-content: center;
-        margin-top: 2rem;
+        margin-top: 7rem;
     }
 
     .heading h1 {
         font-size: 2.2rem;
         font-weight: 700;
         padding: 3px 8%;
+        /* margin-top: 6.8rem; */
     }
+    /* .subheading h5{
+        margin-top: 6.8rem;
+    } */
 
     .description p {
         font-weight: 400;
@@ -618,8 +691,8 @@ nav{
     .servicewrap .box3 {
         padding: 20px 0%;
         margin: 14px 19px;
-        border: 1px solid #6c757d;
-        border-radius: 18px;
+        /* border: 1px solid #6c757d;
+        border-radius: 18px; */
         width: 100%;
     }
 
@@ -645,11 +718,20 @@ nav{
         font-size: 1.8rem;
     }
 
+    #prevwork {
+        margin: 30px 25%;
+        border-radius: 10px;
+        /* box-shadow: 0px 15px 15px rgba(0, 0, 0, .2); */
+        transition: .3s ease;
+    }
+    #prevwork a{
+        height: 8vh;
+    }
+
     /* #footer .footheading{
         display: none;
     } */
     #footer {
-        margin: 20px;
         padding: 20px;
         display: flex;
         align-items: flex-start;
@@ -666,7 +748,7 @@ nav{
     #cnctbanner1 {
         margin-top: 25%;
         width: 100%;
-        height: 100px;
+        height: 200px;
         text-align: center;
         line-height: 200px;
     }
@@ -675,21 +757,26 @@ nav{
         padding: 0 5%;
         text-align: justify;
     }
+    #banner2 .desc p {
+        padding: 0 8%;
+        
+    }
 
 
     /* About us page */
     #about {
         margin-top: 25%;
         width: 100%;
-        height: 100px;
+        height: 200px;
         text-align: center;
         line-height: 200px;
     }
 
     #aboutbanner1 .vision {
         padding: 0 0px;
-       
+
     }
+
     #aboutbanner1 .abtbannerwrap {
         display: flex;
         flex-direction: column-reverse;
@@ -707,30 +794,37 @@ nav{
         margin: 10px 0;
         position: initial;
     }
+
     #aboutbanner1 .abtbannerwrap .abtbannerleft {
         width: 100%;
         padding: 0 0px;
     }
+
     #aboutbanner1 .abtbannerwrap .abtbannerleft {
         width: 100%;
         padding: 0 0px;
     }
+
     #aboutbanner1 .abtbannerwrap .abtbannerleft .future h3 {
         font-size: 2rem;
         font-weight: 600;
     }
+
     #aboutbanner1 .abtbannerwrap .abtbannerleft .pointswrap {
         padding: 20px 0px;
     }
+
     #aboutbanner1 .abtbannerwrap .abtbannerleft .pointswrap .pointdescription {
         padding: 0px 14px;
         /* width: 100%; */
     }
+
     #aboutbanner1 .abtbannerwrap .abtbannerleft .pointswrap .pointdescription h5 {
         font-size: 1rem;
         padding-top: 15px;
         font-weight: 700;
     }
+
     #aboutbanner1 .abtbannerwrap .abtbannerleft .pointswrap .pointdescription p {
         font-size: .85rem;
         color: #808080;
@@ -742,14 +836,17 @@ nav{
         align-items: flex-start;
         justify-content: center;
     }
+
     #aboutbanner2 .abtbanner2right p {
         text-align: justify;
     }
+
     #aboutbanner2 .abtbanner2right {
         padding: 60px 30px;
         /* padding-right: 30px; */
         padding-bottom: 0px;
     }
+
     #aboutbanner2 .abtbanner2left {
         width: 100%;
         padding: 30px;
@@ -760,13 +857,16 @@ nav{
         align-items: flex-start;
         justify-content: center;
     }
+
     #aboutbanner3 .abtbanner3left {
         padding: 30px;
         padding-bottom: 0;
     }
+
     #aboutbanner3 .abtbanner3left .banner3heading p {
         text-align: justify;
     }
+
     #aboutbanner3 .abtbanner3right {
         width: 100%;
         padding: 30px;
@@ -784,16 +884,21 @@ nav{
         align-items: flex-start;
         justify-content: center;
     }
+
     #cnctbanner2 .cnctbanner2left {
         width: 100%;
     }
+
     #cnctbanner2 .cnctbanner2left p {
         font-size: .85rem;
     }
-    #cnctbanner2 .cnctbanner2right .forminput input, #cnctbanner2 .cnctbanner2right .forminput textarea {
+
+    #cnctbanner2 .cnctbanner2right .forminput input,
+    #cnctbanner2 .cnctbanner2right .forminput textarea {
         padding: 6px 12px;
         width: 100%;
     }
+
     #cnctbanner2 .cnctbanner2right .formsubmit button {
         width: 100%;
         padding: 8px 0;
@@ -803,7 +908,8 @@ nav{
         color: #fff;
         border: none;
         border-radius: 2px;
-    } 
+    }
+
     #cnctbanner2 .cnctbanner2right {
         padding: 40px 0px;
         display: flex;
@@ -811,43 +917,77 @@ nav{
         justify-content: center;
         padding-bottom: 0;
     }
+
+    /* Previous Page */
+    .prevbanner h1{
+        font-size: 2.2rem;
+        width: 99%;
+    }
+    #previouswork .allworkwrap .work div {
+        padding: 0px 8px;
+    }
+    #previouswork .allworkwrap .work img {
+        max-width: 100%;
+        max-height: 25vh;
+        border-radius: 25px;
+        padding: 0px;
+        margin: 0px;
+
+    }
 }
 
 
 /* Previous Work Page */
-#previouswork .allworkwrap{
+#previouswork .allworkwrap {
     display: flex;
     flex-direction: column;
     align-items: normal;
     justify-content: space-evenly;
 }
-#previouswork .allworkwrap .work{
+
+#previouswork .allworkwrap .work {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 20px 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .123);
+    border-radius: 20px;
+    background-color: #f5f5f5;
 }
-#previouswork .allworkwrap .worktitle{
+
+#previouswork .allworkwrap .worktitle {
     width: 50%;
 }
-#previouswork .allworkwrap .work div{
+
+#previouswork .allworkwrap .work div {
     padding: 0px 45px;
     opacity: 0;
     overflow: hidden;
     transform: translateY(10px);
     animation: fadeInUp .8s forwards;
 }
+
 #previouswork .allworkwrap .work img {
     width: 100%;
     height: 60vh;
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .123);
+    background-color: #fff;
 }
 
 #previouswork .allworkwrap .proj2,
-#previouswork .allworkwrap .proj4{
+#previouswork .allworkwrap .proj4 {
     display: flex;
     flex-direction: row-reverse;
+    background-color: #dce5ec;
+}
+
+.prevbanner {
+    background-image: url(prevbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
