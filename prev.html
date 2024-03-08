@@ -16,7 +16,10 @@
         .navbar-brand {
           font-size: 1.5rem;
           font-weight: bold;
-          margin-right: 12rem;
+          /* margin-right: 12rem; */
+        }
+        .navbar-brand {
+          margin-right: 0;
         }
         .navbar {
           position: fixed;
@@ -48,9 +51,17 @@
           /* font-size: 1.1rem; */
           /* color: rgb(255, 170, 59); */
         }
+        .navbar-collapse {
+          -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+          -ms-flex-positive: 1;
+          flex-grow: 0;
+          -ms-flex-align: center;
+          align-items: center;
+        }
         
         .navbar-logo {
-          margin-left: auto;
+          margin-left: 0;
         }
         .navbar-logo img{
           width: 100px;
@@ -67,6 +78,7 @@
             margin-right: auto;
           }
           .navbar-logo {
+            /* display: none; */
             margin-left: 0;
           }
           .navbar-nav .nav-link{
@@ -117,10 +129,10 @@
                   </li>
                 </ul>
             </div>
-          <div class="navbar-logo">
+          </div>
+          <div class="navbar-logo collapse navbar-collapse" id="navbarSupportedContent">
             <a href="index.html"><img src="1cdc.jpg" alt="Company Logo" width="50" /></a>
           </div>
-        </div>
       </nav>
 
       <section class="margin">

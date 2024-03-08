@@ -637,7 +637,7 @@ nav {
 
 /* Media Querries */
 /* Mobile */
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
 
     .nav-item-wrap {
         align-items: center;
@@ -668,6 +668,7 @@ nav {
         padding: 3px 8%;
         /* margin-top: 6.8rem; */
     }
+
     /* .subheading h5{
         margin-top: 6.8rem;
     } */
@@ -724,7 +725,8 @@ nav {
         /* box-shadow: 0px 15px 15px rgba(0, 0, 0, .2); */
         transition: .3s ease;
     }
-    #prevwork a{
+
+    #prevwork a {
         height: 8vh;
     }
 
@@ -757,9 +759,10 @@ nav {
         padding: 0 5%;
         text-align: justify;
     }
+
     #banner2 .desc p {
         padding: 0 8%;
-        
+
     }
 
 
@@ -919,21 +922,33 @@ nav {
     }
 
     /* Previous Page */
-    .prevbanner h1{
+    .prevbanner h1 {
         font-size: 2.2rem;
         width: 99%;
     }
+
     #previouswork .allworkwrap .work div {
         padding: 0px 8px;
+        width: 100%;
     }
-    #previouswork .allworkwrap .work img {
-        max-width: 100%;
-        max-height: 25vh;
-        border-radius: 25px;
-        padding: 0px;
-        margin: 0px;
 
+    #previouswork .allworkwrap .work img {
+        padding: 0;
+        max-height: 45vh;
+        margin: 10px 0;
     }
+
+    #previouswork .allworkwrap .work{
+        flex-direction: column;
+    }
+    #previouswork .allworkwrap .proj2,
+    #previouswork .allworkwrap .proj4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
 }
 
 
@@ -948,6 +963,7 @@ nav {
 #previouswork .allworkwrap .work {
     display: flex;
     align-items: center;
+    /* flex-direction: row-reverse; */
     justify-content: space-evenly;
     margin: 20px 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, .123);
@@ -979,8 +995,8 @@ nav {
 
 #previouswork .allworkwrap .proj2,
 #previouswork .allworkwrap .proj4 {
-    display: flex;
-    flex-direction: row-reverse;
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
     background-color: #dce5ec;
 }
 
@@ -989,6 +1005,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 
 

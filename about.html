@@ -22,24 +22,27 @@
       .navbar-brand {
         font-size: 1.5rem;
         font-weight: bold;
-        margin-right: 12rem;
+        /* margin-right: 12rem; */
+      }
+      .navbar-brand {
+        margin-right: 0;
       }
       .navbar {
-          position: fixed;
-          top: 0;
-          z-index: 999;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          -ms-flex-align: center;
-          align-items: center;
-          -ms-flex-pack: justify;
-          justify-content: space-between;
-          padding: .5rem 1rem;
-          width: 100%;
-          box-shadow: 0 5px 15px rgba(0, 0, 0, .123);
-        }
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: .5rem 1rem;
+        width: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .123);
+      }
       .navbar-nav {
         justify-content: center;
       }
@@ -54,9 +57,17 @@
         /* font-size: 1.1rem; */
         /* color: rgb(255, 170, 59); */
       }
+      .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 0;
+        -ms-flex-align: center;
+        align-items: center;
+      }
       
       .navbar-logo {
-        margin-left: auto;
+        margin-left: 0;
       }
       .navbar-logo img{
         width: 100px;
@@ -73,6 +84,7 @@
           margin-right: auto;
         }
         .navbar-logo {
+          /* display: none; */
           margin-left: 0;
         }
         .navbar-nav .nav-link{
@@ -116,9 +128,9 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="logo-wrap">
-        <a class="navbar-brand" href="index.html">Coherent Designers</a>
-        <a class="navbar-brand" href="index.html">& Consultants</a>
-    </div>
+          <a class="navbar-brand" href="index.html">Coherent Designers</a>
+          <a class="navbar-brand" href="index.html">& Consultants</a>
+      </div>
       <button
         class="navbar-toggler"
         type="button"
@@ -132,35 +144,23 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a style="padding-right: 9rem;" class="nav-link" href="service.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a style="padding-right: 9rem;" class="nav-link active" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a style="" class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul> -->
-        <div class="nav-item-wrap">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a style="padding-right: 5rem;" class="nav-link" href="service.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a style="padding-right: 5rem;" class="nav-link active" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a style="" class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-      </div>
-        <div class="navbar-logo">
-          <a href="index.html"><img src="1cdc.jpg" alt="Company Logo" width="50" /></a>
-          
+          <div class="nav-item-wrap">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a style="padding-right: 5rem;" class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a style="padding-right: 5rem;" class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a style="" class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+          </div>
         </div>
-      </div>
+        <div class="navbar-logo collapse navbar-collapse" id="navbarSupportedContent">
+          <a href="index.html"><img src="1cdc.jpg" alt="Company Logo" width="50" /></a>
+        </div>
     </nav>
 
     <section class="margin">
