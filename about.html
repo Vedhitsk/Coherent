@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -143,7 +144,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 8%;">
           <div class="nav-item-wrap">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -306,18 +307,19 @@
             <div class="skills">
               <div class="banner3skill skill1">
                 <span>Detailed Design of Residential & Commercial Spaces</span>
-                <hr />
+                
+                <hr data-aos="fade-right" data-aos-once="true">
               </div>
               <div class="banner3skill skill2">
                 <span
                   >Detailed Design of Bridges, Underpasses, & Retaining
                   Structures</span
                 >
-                <hr />
+                <hr data-aos="fade-right" data-aos-once="true">
               </div>
               <div class="banner3skill skill3">
                 <span>Structural Engineering Consultancy</span>
-                <hr />
+                <hr data-aos="fade-right" data-aos-once="true">
               </div>
             </div>
           </div>
@@ -342,7 +344,7 @@
 
       <div class="footabout">
         <h4>About</h4>
-        <h6><a href="">Our Mission</a></h6>
+        <h6><a href="mission.html">Our Mission</a></h6>
       </div>
 
       <div class="footcontact">
@@ -353,7 +355,13 @@
         <p>+91-9319141123</p>
       </div>
     </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
+    <!-- <script src="samplejs.js"></script> -->
     <!-- Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

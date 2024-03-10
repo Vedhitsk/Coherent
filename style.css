@@ -519,13 +519,26 @@ nav {
 #aboutbanner3 .abtbanner3left .banner3heading .skills .banner3skill {
     padding-bottom: 20px;
 }
-
+/* #aboutbanner3 .abtbanner3left .banner3heading .skills .content{
+    position: relative;
+    height: 30px
+} */
 #aboutbanner3 .abtbanner3left .banner3heading .skills .banner3skill hr {
     padding-top: 5px;
     border-radius: 30px;
-    /* color: #ffffff; */
     background-color: #001f35;
+    /* opacity: 1; */
+    /* transition: all 0.5s ease-in-out; */
+    /* width: 0;
+    height: 3px;
+    border: none;
+    animation: slideIn 1s forwards; */
+
 }
+
+/* .vertical-hr {
+    width: 2px;
+  } */
 
 #aboutbanner3 .abtbanner3left .banner3heading .skills .banner3skill span {
     font-size: medium;
@@ -565,7 +578,7 @@ nav {
 
 #cnctbanner1 .cnctbanner1heading h1 {
     font-size: 3.2rem;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 #cnctbanner2 {
@@ -875,6 +888,7 @@ nav {
         padding: 30px;
         padding-top: 2px;
     }
+    
 
 
 
@@ -1007,7 +1021,26 @@ nav {
 }
 
 
-
+/* Mission Page */
+.missionbanner{
+    background-image: url(mission-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.missioncontent {
+    margin: 30px 100px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.missioncontent p{
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(10px);
+    animation: fadeInUp .8s forwards;
+}
 
 
 /* ANIMATION */
