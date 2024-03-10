@@ -961,6 +961,11 @@ nav {
         flex-direction: column;
     }
 
+
+    /* Mission page */
+    .missioncontent p {
+        margin: 0px -65px;
+    }
     
 
 }
