@@ -1,0 +1,75 @@
+/* Consolidated Navbar & Custom Structural Styling */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .123);
+}
+
+.navbar-nav {
+  justify-content: center;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 0;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navbar-logo {
+  margin-left: 0;
+}
+
+.navbar-logo img {
+  width: 100px;
+}
+
+.logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin-right: auto;
+  }
+  .navbar-logo {
+    margin-left: 0;
+  }
+  .navbar-nav .nav-link {
+    padding-left: 1rem;
+  }
+  .navbar-logo img {
+    width: 120px;
+    margin: 2% 35%;
+  }
+}
