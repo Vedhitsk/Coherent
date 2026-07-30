@@ -3,255 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="samplestyle.css"> -->
-    <title>Coherent</title>
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      /* Custom styles */
-      .navbar-brand {
-        font-size: 1.5rem;
-        font-weight: bold;
-        /* margin-right: 12rem; */
-      }
-      .navbar-brand {
-        margin-right: 0;
-      }
-      .navbar {
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        padding: .5rem 1rem;
-        width: 100%;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, .123);
-      }
-      .navbar-nav {
-        justify-content: center;
-      }
-      .navbar-nav .nav-link {
-        padding: 0.5rem 1rem;
-      }
-      /* .nav-item{
-          padding-right: 9rem;
-      } */
-      .navbar-light .navbar-nav .nav-link .active{
-        font-weight: 500;
-        /* font-size: 1.1rem; */
-        /* color: rgb(255, 170, 59); */
-      }
-      .navbar-collapse {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        -ms-flex-positive: 1;
-        flex-grow: 0;
-        -ms-flex-align: center;
-        align-items: center;
-      }
-      
-      .navbar-logo {
-        margin-left: 0;
-      }
-      .navbar-logo img{
-        width: 100px;
-        
-      }
-      .logo-wrap{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-      }
-      @media (max-width: 768px) {
-        .navbar-brand {
-          margin-right: auto;
-        }
-        .navbar-logo {
-          /* display: none; */
-          margin-left: 0;
-        }
-        .navbar-nav .nav-link{
-            padding-left: 1rem;
-        }
-        /* .nav-item{
-          text-align: center;
-        } */
-        .navbar-logo img{
-          width: 120px;
-          margin: 2% 35%;
-        }
-
-      }
-    </style>
+    <title>Coherent Designers & Consultants</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <!-- <section>
-        <div class="headercontainer">
-            <div class="listwrap">
-                <span>COHERENT DESIGNERS & CONSULTANTS</span>
-            </div>
-            <div class="navbar">
-                <ul>
-                    <li class="headitems home"><a href="index.html">Home</a></li>
-                    <li class="headitems services"><a href="service.html">Services</a></li>
-                    <li class="headitems"><a href="about.html">About us</a></li>
-                    <li class="headitems contact"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="logo">
-                <a href="index.html"><img src="1cdc.jpg" alt=""></a>
-            </div>
-        </div>
-    </section> -->
-    
+    <!-- Header dynamically rendered via js/app.js -->
+    <header id="main-header"></header>
 
-    <!-- <section id="header">
-        <a href="index.html"><img src="" alt="logo"></a>
-
-        <div>
-            <ul id="navbar">
-                <li><a class="btn1" href="index.html">Home</a></li>
-                <li><a class="active btn2" href="startshop.html">Shop</a></li>
-                <li><a class="btn3" href="about.html">About</a></li>
-                <li><a class="btn4" href="contact.html">Contact</a></li>
-                <i id="close" class="fa-solid fa-xmark"></i>
-            </ul>
-        </div>
-        <div id="mobile">
-            <i id="bar" class="fas fa-outdent"></i>
-        </div>
-    </section> -->
-
-
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="logo-wrap">
-          <a class="navbar-brand" href="index.html">Coherent Designers</a>
-          <a class="navbar-brand" href="index.html">& Consultants</a>
-      </div>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 8%;">
-          <div class="nav-item-wrap">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a style="padding-right: 5rem;" class="nav-link" href="service.html">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a style="padding-right: 5rem;" class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a style="" class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-          </div>
-        </div>
-        <div class="navbar-logo collapse navbar-collapse" id="navbarSupportedContent">
-          <a href="index.html"><img src="1cdc.jpg" alt="Company Logo" width="50" /></a>
-        </div>
-    </nav>
-
-      <section class="margin">
+    <section class="margin">
         <!-- Banner 1 -->
         <section id="banner1">
             <div class="subheading">
-                <h5>Structural Engineering Solutions</h5>
+                <h5 data-site="home-subheading">Structural Engineering Solutions</h5>
             </div>
             <div class="heading">
-                <h1>Innovative & Cost-Effective Structural Design</h1>
+                <h1 data-site="home-title">Innovative & Cost-Effective Structural Design</h1>
             </div>
             <div class="description">
-                <p>Welcome to Coherent Designers & Consultants, a leading structural engineering firm dedicated to delivering innovative and cost-effective solutions for your construction projects. Our team of expert structural engineers specializes in detailed design of residential, commercial spaces, high-rise apartment buildings, bridges, underpasses, and retaining structures. We provide comprehensive structural engineering consultancy and on-site visits to ensure the success of your project. At Coherent Designers & Consultants, we bring your vision to life, with precision and efficiency.</p>
+                <p data-site="home-description"></p>
             </div>
         </section>
-    
-        <!-- Banner 2 -->
+
+        <!-- Banner 2 (Services Preview) -->
         <section id="banner2">
             <h3>Services</h3>
-            <div class="servicewrap">
-                <div class="servicebox box1">
-                    <img src="service-1_startup_template_1HevSx5z.webp" alt="" height="180px" style="border-radius: 16px">
-                    <h6>Detailed Design Of Residential, Commercial Spaces & High Rise Apartment Buildings</h6>
-    
-                    <p>Our detailed design services for residential, commercial spaces, and high-rise apartment buildings guarantee a safe and efficient structural system. Our team of experts ensures that the design is customized to meet your specific needs while complying with all codes and regulations.</p>
-                </div>
-                <div class="servicebox box2">
-                    <img src="service-4_1HevSx5z.webp" alt="" height="180px" style="border-radius: 18px;">
-    
-                    <h6>Detailed Design Of Bridges, Underpasses & Retaining Structures</h6>
-    
-                    <p>Our detailed design services for bridges, underpasses, and retaining structures ensure a durable and reliable structure that can withstand various environmental and loading conditions. We specialize in designing structures that are not only structurally sound but also aesthetically pleasing.</p>
-                </div>
-                <div class="servicebox box3">
-                    <img src="service-3_1HevSx5z.webp" alt="" height="180px" style="border-radius: 18px;">
-    
-                    <h6>Providing Structural Engineering Consultancy And On-Site Visits</h6>
-    
-                    <p>Our structural engineering consultancy services provide expert advice and guidance for your construction projects. We offer on-site visits to ensure that the design meets all safety and regulatory requirements. Our team of professionals works closely with you to ensure the project’s success, from design to construction and beyond.</p>
-                </div>
+            <div class="servicewrap" id="services-list">
+                <!-- Populated dynamically from data/site-data.json -->
             </div>
         </section>
-    
-        <!-- Previous Work -->
-        <section id="prevwork">
-            <h2><a href="prev.html">Previous Work</a></h2>
+
+        <!-- Banner 3 (Previous Work Preview) -->
+        <section id="banner3">
+            <h3>Previous Work</h3>
+            <div class="prevbtn">
+                <button><a href="prev.html">View Portfolio</a></button>
+            </div>
         </section>
-
-      </section>
-
-
-
-    <!-- Footer -->
-    <section id="footer">
-        <div class="footheading">
-            <h2 style="font-weight: bold;">COHERENT</h2>
-            <h2 style="font-weight: bold;"> DESIGNERS</h2>
-            <h2 style="font-weight: bold;"> & CONSULTANTS</h2>
-        </div>
-
-        <div class="footabout">
-            <h4>About</h4>
-            <h6><a href="mission.html">Our Mission</a></h6>
-        </div>
-
-        <div class="footcontact">
-            <p>coherentdc@gmail.com</p>
-            <hr>
-            <p>Delhi, India</p>
-            <hr>
-            <p>+91-8813866199</p>
-            
-        </div>
     </section>
 
+    <!-- Footer dynamically rendered via js/app.js -->
+    <footer id="main-footer"></footer>
 
-
-    <!-- Bootstrap JS and jQuery -->
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
-
 </html>

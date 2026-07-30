@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="style.css" />
+    <title>About - Coherent</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
@@ -13,167 +15,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>About</title>
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      /* Custom styles */
-      .navbar-brand {
-        font-size: 1.5rem;
-        font-weight: bold;
-        /* margin-right: 12rem; */
-      }
-      .navbar-brand {
-        margin-right: 0;
-      }
-      .navbar {
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        padding: .5rem 1rem;
-        width: 100%;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, .123);
-      }
-      .navbar-nav {
-        justify-content: center;
-      }
-      .navbar-nav .nav-link {
-        padding: 0.5rem 1rem;
-      }
-      /* .nav-item{
-          padding-right: 9rem;
-      } */
-      .navbar-light .navbar-nav .nav-link .active{
-        font-weight: 500;
-        /* font-size: 1.1rem; */
-        /* color: rgb(255, 170, 59); */
-      }
-      .navbar-collapse {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        -ms-flex-positive: 1;
-        flex-grow: 0;
-        -ms-flex-align: center;
-        align-items: center;
-      }
-      
-      .navbar-logo {
-        margin-left: 0;
-      }
-      .navbar-logo img{
-        width: 100px;
-        
-      }
-      .logo-wrap{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-      }
-      @media (max-width: 768px) {
-        .navbar-brand {
-          margin-right: auto;
-        }
-        .navbar-logo {
-          /* display: none; */
-          margin-left: 0;
-        }
-        .navbar-nav .nav-link{
-            padding-left: 1rem;
-        }
-        /* .nav-item{
-          text-align: center;
-        } */
-        .navbar-logo img{
-          width: 120px;
-          margin: 2% 35%;
-        }
-
-      }
-    </style>
   </head>
 
   <body>
-    
-    <!-- <section>
-      <div class="headercontainer">
-        <div class="logo">
-          <a href="index.html"><img src="1cdc.jpg" alt="" /></a>
-        </div>
-        <div class="listwrap"></div>
-        <div class="navbar">
-          <ul>
-            <li class="headitems home"><a href="index.html">Home</a></li>
-            <li class="headitems services">
-              <a href="service.html">Services</a>
-            </li>
-            <li class="headitems"><a href="about.html">About us</a></li>
-            <li class="headitems contact">
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="logo-wrap">
-          <a class="navbar-brand" href="index.html">Coherent Designers</a>
-          <a class="navbar-brand" href="index.html">& Consultants</a>
-      </div>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 8%;">
-          <div class="nav-item-wrap">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a style="padding-right: 5rem;" class="nav-link" href="service.html">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a style="padding-right: 5rem;" class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a style="" class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-          </div>
-        </div>
-        <div class="navbar-logo collapse navbar-collapse" id="navbarSupportedContent">
-          <a href="index.html"><img src="1cdc.jpg" alt="Company Logo" width="50" /></a>
-        </div>
-    </nav>
+    <!-- Header dynamically rendered via js/app.js -->
+    <header id="main-header"></header>
 
     <section class="margin">
-  
       <!-- About Banner -->
       <section id="about">
-        <div class="">
+        <div>
           <h1>About Us</h1>
         </div>
       </section>
-  
-      <!-- Banner 1 -->
+
+      <!-- Banner 1: Our Vision -->
       <section id="aboutbanner1">
         <div class="vision">
           <span>Our Vision</span>
@@ -183,58 +39,18 @@
             <div class="future">
               <h3>Building a safer and more sustainable future.</h3>
             </div>
-            <div class="multifeatures">
-              <div class="pointswrap">
-                <div class="pointlogos">
-                  <i class="fa-solid fa-gear"></i>
-                </div>
-                <div class="pointdescription">
-                  <h5>Innovative Engineering Solutions</h5>
-                  <p>
-                    Leveraging cutting-edge technology and engineering expertise
-                    to deliver unique, state-of-the-art solutions that meet your
-                    specific needs.
-                  </p>
-                </div>
-              </div>
-              <div class="pointswrap">
-                <div class="pointlogos">
-                  <i class="fa-solid fa-money-bill"></i>
-                </div>
-                <div class="pointdescription">
-                  <h5>Innovative Engineering Solutions</h5>
-                  <p>
-                    Leveraging cutting-edge technology and engineering expertise
-                    to deliver unique, state-of-the-art solutions that meet your
-                    specific needs.
-                  </p>
-                </div>
-              </div>
-              <div class="pointswrap">
-                <div class="pointlogos">
-                  <i class="fa-solid fa-leaf"></i>
-                </div>
-                <div class="pointdescription">
-                  <h5>Innovative Engineering Solutions</h5>
-                  <p>
-                    Leveraging cutting-edge technology and engineering expertise
-                    to deliver unique, state-of-the-art solutions that meet your
-                    specific needs.
-                  </p>
-                </div>
-              </div>
+            <div class="multifeatures" id="vision-points-list">
+              <!-- Populated dynamically from data/site-data.json -->
             </div>
           </div>
-  
+
           <div class="abtbannerright">
             <div class="imgwrap">
               <div class="mobileneed">
                 <img
-                  
-                  src="creative-business-people-working-on-business-proje-58FUABR_1HevSx5z-qjqt14p1edykryt8h7qwdnfs4jtmtggzjvx5v7o01s.webp"
-                  alt=""
+                  src="images/creative-business-people-working-on-business-proje-58FUABR_1HevSx5z-qjqt14p1edykryt8h7qwdnfs4jtmtggzjvx5v7o01s.webp"
+                  alt="Team Work"
                 />
-  
               </div>
               <div class="twoimg">
                 <img
@@ -248,10 +64,9 @@
                     bottom: 90px;
                     z-index: 999;
                   "
-                  src="office-lifestyle-business-and-people-concept-attra-4MLRBMH_1HevSx5z.webp"
-                  alt=""
+                  src="images/office-lifestyle-business-and-people-concept-attra-4MLRBMH_1HevSx5z.webp"
+                  alt="Office Life"
                 />
-  
                 <img
                   style="
                     width: 100%;
@@ -261,7 +76,7 @@
                     bottom: 0px;
                     z-index: -1;
                   "
-                  src="dots_1HevSx5z-qjqt13r149z4ec1xk50f8rgicgw4azanssbtmxba2g.webp"
+                  src="images/dots_1HevSx5z-qjqt13r149z4ec1xk50f8rgicgw4azanssbtmxba2g.webp"
                   alt=""
                 />
               </div>
@@ -269,12 +84,12 @@
           </div>
         </div>
       </section>
-  
-      <!-- About Banner 2 -->
+
+      <!-- About Banner 2: Who We Are -->
       <section id="aboutbanner2">
         <div class="abtbanner2left">
           <div class="imgbanner2">
-            <img style="width: 100%; border-radius: 20px" src="3.png" alt="" />
+            <img style="width: 100%; border-radius: 20px" src="images/3.png" alt="Expert Engineers" />
           </div>
         </div>
         <div class="abtbanner2right">
@@ -288,8 +103,8 @@
           </p>
         </div>
       </section>
-  
-      <!-- About Banner 3 -->
+
+      <!-- About Banner 3: Our Skills -->
       <section id="aboutbanner3">
         <div class="abtbanner3left">
           <div class="ourskills">
@@ -304,68 +119,31 @@
               structures. We also provide structural engineering consultancy and
               on-site visits to ensure quality control and project success.
             </p>
-            <div class="skills">
-              <div class="banner3skill skill1">
-                <span>Detailed Design of Residential & Commercial Spaces</span>
-                
-                <hr data-aos="fade-right" data-aos-once="true">
-              </div>
-              <div class="banner3skill skill2">
-                <span
-                  >Detailed Design of Bridges, Underpasses, & Retaining
-                  Structures</span
-                >
-                <hr data-aos="fade-right" data-aos-once="true">
-              </div>
-              <div class="banner3skill skill3">
-                <span>Structural Engineering Consultancy</span>
-                <hr data-aos="fade-right" data-aos-once="true">
-              </div>
+            <div class="skills" id="skills-list">
+              <!-- Populated dynamically from data/site-data.json -->
             </div>
           </div>
         </div>
         <div class="abtbanner3right">
           <img style="width: 100%; border-radius: 20px;"
-            src="creative-business-people-discussing-over-digital-t-KL7SHQF_1HevSx5z-qjqt14p1edykryt8h7qwdnfs4jtmtggzjvx5v7o01s.webp"
-            alt=""
+            src="images/creative-business-people-discussing-over-digital-t-KL7SHQF_1HevSx5z-qjqt14p1edykryt8h7qwdnfs4jtmtggzjvx5v7o01s.webp"
+            alt="Discussion"
           />
         </div>
       </section>
-
     </section>
 
-    <!-- Footer -->
-    <section id="footer">
-      <div class="footheading">
-        <h2 style="font-weight: bold;">COHERENT</h2>
-        <h2 style="font-weight: bold;">DESIGNERS</h2>
-        <h2 style="font-weight: bold;">& CONSULTANTS</h2>
-      </div>
+    <!-- Footer dynamically rendered via js/app.js -->
+    <footer id="main-footer"></footer>
 
-      <div class="footabout">
-        <h4>About</h4>
-        <h6><a href="mission.html">Our Mission</a></h6>
-      </div>
-
-      <div class="footcontact">
-        <p>coherentdc@gmail.com</p>
-        <hr />
-        <p>Delhi, India</p>
-        <hr />
-        <p>+91-8813866199</p>
-      </div>
-    </section>
-    
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
-    <!-- <script src="samplejs.js"></script> -->
-    <!-- Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
-
